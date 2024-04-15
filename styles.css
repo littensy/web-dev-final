@@ -1,0 +1,146 @@
+body {
+	font-family: Inter, sans-serif;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+p {
+	color: #ffffffaa;
+	letter-spacing: 0.04em;
+	line-height: 1.5;
+}
+
+.backdrop {
+	background-image: url("assets/backdrop.png");
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.navbar-container {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	height: 3.5em;
+	margin-top: 1em;
+}
+
+.navbar {
+	background-color: #090909d8;
+	border: 2px solid #ffffff10;
+	border-radius: 3.5em;
+	box-shadow: 0 0.25em 3em -0.5em #00000080;
+	display: flex;
+	width: fit-content;
+	padding: 0 0.25em;
+	div {
+		align-content: center;
+		:hover {
+			background-color: #ffffff0a;
+			color: #ffffff;
+		}
+	}
+	div a {
+		color: #ffffff80;
+		background-color: #ffffff00;
+		border-radius: 1.5em;
+		padding: 0.75em 1em;
+		transition: background-color 0.3s, color 0.3s;
+	}
+}
+
+/* Homepage */
+
+.games {
+	padding: 8em 0;
+}
+
+.game-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2em 0;
+	border-radius: 1em;
+}
+
+.game-thumbnail {
+	object-fit: cover;
+	background-color: #101010aa;
+	border-radius: 1em;
+	box-shadow: 0 0.25em 6em -0.5em #00000080;
+	width: 40%;
+	min-width: 25em;
+	aspect-ratio: 4 / 3;
+	margin: 1.5em 1.5em;
+}
+
+.game-stats {
+	color: #ffffff60;
+}
+
+.game-info {
+	margin: auto 1.5em;
+	width: 30%;
+	min-width: 20em;
+	h2 {
+		margin-top: 0em;
+	}
+	> div {
+		display: flex;
+		gap: 0.5em;
+		margin-top: 2em;
+	}
+}
+
+.button-primary {
+	text-align: center;
+	width: fit-content;
+	:hover {
+		background-color: #fffffff6;
+	}
+	a {
+		color: #000000;
+		background-color: #ffffffdd;
+		border-radius: 0.5em;
+		padding: 0.75em 1em;
+		transition: background-color 0.3s;
+	}
+}
+
+.button-secondary {
+	text-align: center;
+	width: fit-content;
+	:hover {
+		background-color: #ffffff50;
+	}
+	a {
+		color: #ffffff;
+		background-color: #ffffff30;
+		border-radius: 0.5em;
+		padding: 0.75em 1em;
+		transition: background-color 0.3s;
+	}
+}
+
+@media (max-width: 850px) {
+	.game-thumbnail,
+	.game-info {
+		width: 80%;
+		min-width: 15em;
+	}
+
+	.game-container:nth-child(even) .game-thumbnail {
+		order: -1;
+	}
+}
