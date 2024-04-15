@@ -64,6 +64,8 @@ p {
 
 .games {
 	padding: 8em 0;
+	margin: 0 auto;
+	max-width: 80em;
 }
 
 .game-container {
