@@ -45,6 +45,8 @@ p {
 	display: flex;
 	width: fit-content;
 	padding: 0.25em;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: saturate(180%) blur(10px);
 
 	a {
 		align-content: center;
@@ -208,4 +210,34 @@ p {
 	.game-container:nth-child(even) .game-thumbnail {
 		order: -1;
 	}
+}
+
+/* Community */
+
+.backdrop-community {
+	background-image: url("assets/backdrop-community.png");
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50em;
+	z-index: -1;
+}
+
+.community-header {
+	font-size: 3em;
+	text-align: center;
+	padding-top: 5em;
+	margin: 0 0 0.5em 0;
+	text-shadow: 0 0.05em 0.1em #0000000d, 0 0.1em 0.2em #0000000d, 0 0.2em 0.4em #0000000d;
+}
+
+.community-caption {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 30em;
+	padding-bottom: 20em;
+	text-shadow: 0 0.05em 0.1em #0000000d, 0 0.1em 0.2em #0000000d, 0 0.2em 0.4em #0000000d;
 }
