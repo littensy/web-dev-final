@@ -27,7 +27,7 @@ h3 {
 	backdrop-filter: blur(1em);
 }
 
-.navbar-container {
+nav {
 	display: flex;
 	justify-content: center;
 	position: fixed;
@@ -66,7 +66,7 @@ h3 {
 	margin: 2em 0;
 }
 
-.footer {
+footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
