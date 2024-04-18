@@ -16,6 +16,12 @@ p {
 	line-height: 1.5;
 }
 
+h1,
+h2,
+h3 {
+	color: #ffffffdd;
+}
+
 .blur {
 	-webkit-backdrop-filter: blur(1em);
 	backdrop-filter: blur(1em);
@@ -47,41 +53,50 @@ p {
 		border-radius: 1.5em;
 		padding: 0.75em 1em;
 		transition: background-color 0.3s, color 0.3s;
-	}
 
-	a:hover {
-		background-color: #ffffff0a;
-		color: #ffffff;
+		&:hover {
+			background-color: #ffffff0a;
+			color: #ffffff;
+		}
 	}
+}
+
+.page-divider {
+	border-top: 1px solid #ffffff20;
+	margin: 2em 0;
 }
 
 .footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 8em;
-	padding: 4em 2em 6em 2em;
+	gap: 4em 8em;
+	padding: 4em 4em 6em 2em;
 	border-top: 1px solid #ffffff20;
 	background-color: #00000030;
+	font-size: 0.8em;
 
-	> div {
-		display: flex;
-		flex-direction: column;
-		gap: 1em;
+	p {
+		color: #ffffff84;
 	}
 
-	> div p {
-		color: #ffffff;
-	}
-
-	> div a {
+	a {
 		color: #ffffff60;
 		transition: color 0.3s;
 		align-items: center;
+
+		&:hover {
+			color: #ffffff;
+		}
 	}
 
-	> div a:hover {
-		color: #ffffff;
+	li {
+		list-style: none;
+
+		ul {
+			padding-left: 0;
+			margin-top: 0;
+		}
 	}
 }
 
@@ -97,10 +112,10 @@ p {
 	border-radius: 0.5em;
 	padding: 0.75em 0.75em;
 	transition: background-color 0.3s;
-}
 
-.button-primary:hover {
-	background-color: #ffffff;
+	&:hover {
+		background-color: #ffffff;
+	}
 }
 
 .button-secondary {
@@ -113,10 +128,10 @@ p {
 	border-radius: 0.5em;
 	padding: 0.75em 1em;
 	transition: background-color 0.3s;
-}
 
-.button-secondary:hover {
-	background-color: #ffffff40;
+	&:hover {
+		background-color: #ffffff40;
+	}
 }
 
 /* Homepage */
@@ -147,6 +162,7 @@ p {
 		width: 16em;
 		border: 2px solid #ffffff10;
 		border-radius: 1em;
+		box-shadow: 0 0.25em 6em -0.5em #000000;
 	}
 
 	div {
@@ -204,10 +220,10 @@ p {
 			margin: 0.5em 0;
 		}
 	}
-}
 
-.about-card:hover {
-	background-color: #ffffff30;
+	&:hover {
+		background-color: #ffffff30;
+	}
 }
 
 /* Projects */
@@ -245,11 +261,6 @@ p {
 	}
 }
 
-.hero-divider {
-	border-top: 1px solid #ffffff20;
-	margin: 2em 0;
-}
-
 .games {
 	padding: 4em 0;
 	margin: 0 auto;
@@ -281,6 +292,62 @@ p {
 
 .game-info {
 	margin: auto 1.5em;
+	width: 30%;
+	min-width: 20em;
+
+	h2 {
+		margin-top: 0em;
+	}
+
+	> div {
+		display: flex;
+		gap: 0.5em;
+		margin-top: 2em;
+	}
+}
+
+.packages {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1em;
+	padding: 4em 2em 4em 2em;
+
+	> table {
+		background-color: #ffffff10;
+		border-radius: 1em;
+		width: 100%;
+		max-width: 40em;
+		min-width: 10em;
+		border-collapse: collapse;
+		margin-bottom: 2em;
+
+		th,
+		td {
+			padding: 1em 2em;
+
+			&:first-child {
+				text-align: left;
+			}
+
+			&:last-child {
+				text-align: right;
+			}
+
+			&:nth-child(2),
+			&:nth-child(3) {
+				text-align: center;
+			}
+		}
+
+		tr:nth-child(even) {
+			background-color: #ffffff08;
+		}
+	}
+}
+
+.package-info {
+	margin: auto 2em;
 	width: 30%;
 	min-width: 20em;
 
