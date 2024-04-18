@@ -153,7 +153,7 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 8em 0 2em 0;
+	padding: 8em 4em 2em 4em;
 	margin: 0 auto;
 	max-width: 32em;
 	text-align: center;
@@ -184,7 +184,7 @@ footer {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 2em;
-	padding: 2em 0 10em 0;
+	padding: 2em 2em 10em 2em;
 	margin: 0 auto;
 	max-width: 80em;
 }
@@ -245,7 +245,7 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 8em 0 2em 0;
+	padding: 8em 4em 2em 4em;
 	margin: 0 auto;
 	max-width: 40em;
 	text-align: center;
@@ -318,7 +318,7 @@ footer {
 		border-radius: 1em;
 		width: 100%;
 		max-width: 40em;
-		min-width: 10em;
+		min-width: 5em;
 		border-collapse: collapse;
 		margin-bottom: 2em;
 
@@ -363,6 +363,10 @@ footer {
 }
 
 @media (max-width: 850px) {
+	body {
+		font-size: 0.8em;
+	}
+
 	.game-thumbnail,
 	.game-info {
 		width: 80%;
@@ -371,6 +375,14 @@ footer {
 
 	.game-container:nth-child(even) .game-thumbnail {
 		order: -1;
+	}
+}
+
+@media (max-width: 600px) {
+	.packages {
+		table {
+			font-size: 0.7em;
+		}
 	}
 }
 
